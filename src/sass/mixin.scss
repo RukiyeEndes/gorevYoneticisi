@@ -1,0 +1,25 @@
+@import "variables.scss";
+
+@mixin clearFloat {
+    &:after{
+        display: block;
+        clear: both;
+    }
+}
+
+@mixin headerSecondLi {
+    float: right;
+    font-weight: bold;
+    font-size: 25px;
+    color: $black;
+    margin: 20px 0;
+    font-family: cursive;
+    letter-spacing: 5px;
+}
+
+@mixin seciniz {
+    margin: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+    color: $darkGrey;
+}

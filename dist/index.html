@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Görev Yöneticisi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12 col-lg-12" id="header">
+                    <ul>
+                        <li><img src="images/logo.png" alt="" id="logo"></li>
+                        <li>Görev Yöneticisi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12 col-lg-12" id="nav-bar">
+                    <ul>
+                        <li><a href="#">Anasayfa</a></li>
+                        <li><a href="#">Görevlerim</a></li>
+                        <li><a href="#">Yeni Görev Oluştur</a></li>
+                        <li><a href="#">Hesabım</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <section>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 col-12 col-lg-3" id="seciniz">
+                    <h3><small><b>Seçiniz</b></small></h3> <hr>
+                    <ul id="seciniz">
+                        <li><b>Yeni Görev Oluştur</b></li>
+                        <li><b>Görevlerim</b></li>                        
+                        <li id="tehlike" onclick="tehlike();"><b>Tehlike rengini ayarla</b></li>
+                        <li id="renktablosu">
+                            <table class="table">
+                                <tr>
+                                    <td id="aff9ff" style="background-color: #aff9ff;">1</td>
+                                    <td id="ffbaff" style="background-color: #ffbaff;">2</td>
+                                    <td id="d2a8ff" style="background-color: #d2a8ff;">3</td>
+                                </tr>
+                                <tr>
+                                    <td id="ffffaa" style="background-color: #ffffaa;">5</td>
+                                    <td id="ffaaaa" style="background-color: #ffaaaa;">6</td>
+                                    <td id="adadad" style="background-color: #adadad;">7</td>
+                                </tr>
+                                <tr>
+                                    <td id="ff60ad" style="background-color: #ff60ad;">9</td>
+                                    <td id="ff7f00" style="background-color: #ff7f00;">10</td>
+                                    <td id="white" style="background-color: #ffffff;">11</td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-12 col-lg-3" id="yapilacaklar">
+                    <h3><small><b>YAPILACAKLAR</b></small></h3> <hr>
+                    <ul id="listeyapilacak">
+                        <!--bos liste-->
+                    </ul>
+                    <input type="text" class="form-control" id="txtyapilacak" maxlength="25">
+
+                    <button type="button" class="btn btn-success mb-1 mt-3" onclick="listeyeEkle();">Listeye Ekle</button>
+                </div>
+
+                <div class="col-md-3 col-12 col-lg-3" id="yapiliyor">
+                    <h3><small><b>YAPILIYOR</b></small></h3> <hr>
+                    <ul id="listeyapiliyor">
+                        <!--bos listee-->
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-12 col-lg-3" id="yapildi">
+                    <h3><small><b>YAPILDI</b></small></h3> <hr>
+                    <ul id="listeyapildi">
+                        <!--bos listee-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12 col-lg-12" id="footer">
+                    <small><b>2020 Footer</b></small>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

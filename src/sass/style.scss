@@ -1,0 +1,70 @@
+@import "reset.scss";
+@import "variables.scss";
+@import "mixin.scss";
+
+header, nav, section, footer{
+    background-color: $bdbdbd33;
+}
+
+#header {
+    background-color: $lightgrey;
+    ul {
+        @include clearFloat;
+        width: 100%;
+        li {
+            float: left;            
+            &:nth-child(2) {
+                @include headerSecondLi;
+            }
+            img {
+                width: 75px;
+                height: 75px;
+            }
+        }
+    }
+}
+
+#nav-bar {
+    background-color: $black;
+    ul {
+        @include clearFloat;
+        li {
+            float: left;
+            margin: 15px;
+            a{
+                color: $lightgrey;
+                font-weight: bold;
+                &:hover {
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+section {
+    #seciniz ul li {
+        @include seciniz;
+    }
+}
+
+#seciniz, #yapilacaklar, #yapiliyor, #yapildi {
+    h3 {
+        margin: 10px auto;
+    }
+}
+
+#seciniz li:nth-child(4){
+    display: none;
+}
+
+#yapilacaklar, #yapiliyor, #yapildi {
+    display: inline-block;
+}
+
+#footer {
+    background-color: $footer-bg;
+    width: 100%;
+    text-align: right;
+}
